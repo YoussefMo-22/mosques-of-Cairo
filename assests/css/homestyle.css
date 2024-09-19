@@ -1,0 +1,289 @@
+::selection 
+{
+    background-color: #0e4471;
+    color: #ffac2e;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Cinzel&family=Kdam+Thmor+Pro&family=Poppins&display=swap');
+:root{
+    --bg:#f7dbb6;
+    --text:#0e4471;
+}
+/************************TITLE*************************/
+.title{
+    background-image: url(../img/icon/wall2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+.title h1{
+    width: 100%;
+    text-align: center;
+    font-size: 7.4vw;
+    font-weight: bold;
+    font-family: 'cinzel',sans-serif;
+    color: var(--bg);
+    filter: drop-shadow(0px 10px 5px #1e1e1e);
+}
+.title h3{
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'cinzel',sans-serif;
+    color: var(--bg);
+    filter: drop-shadow(0px 10px 5px #1e1e1e);
+}
+.title a{
+    text-decoration: none;
+    padding: 10px 55px;
+    border: 3px solid var(--bg);
+    border-radius: 10px;
+    color: var(--bg);
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.4s;
+    font-family: 'cinzel',sans-serif;
+}
+.title a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.2);
+}
+/********************SIGNIFICANCE********************/
+.sign{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    
+}
+.sign h3{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'cinzel',sans-serif;
+    text-align: center;
+    padding: 30px 0px;
+    position: relative;
+}
+.sign h3::before{
+    content: '';
+    width: 7%;
+    height: 3px;
+    background-color: #ffac2e;
+    position: absolute;
+    left: 34%;
+    bottom: 10px;
+    transition: 0.4s;
+}
+.sign h3::after{
+    content: '';
+    width: 3%;
+    height: 3px;
+    background-color: #ffac2e;
+    position: absolute;
+    left: 34%;
+    bottom: 2px;
+    transition: 0.4s;
+}
+
+.sign p{
+    color: #0e4471;
+    background-color: #f8ce91;
+    border-radius: 30px;
+    font-size: 22px;
+    font-family: 'cairo', serif;
+    margin: 45px 50px;
+    padding: 30px;;
+    text-align: justify;
+}
+
+/********************TIMELINE***********************/
+.timeline{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+.timeline h3{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'cinzel',sans-serif;
+    text-align: center;
+    padding: 30px 0px;
+    position: relative;
+}
+.timeline h3::before{
+    content: '';
+    width: 7%;
+    height: 3px;
+    background-color: #ffac2e;
+    position: absolute;
+    left: 34%;
+    bottom: 10px;
+    transition: 0.4s;
+}
+.timeline h3::after{
+    content: '';
+    width: 3%;
+    height: 3px;
+    background-color: #ffac2e;
+    
+    position: absolute;
+    left: 34%;
+    bottom: 2px;
+    transition: 0.4s;
+}
+.timeline .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.timeline .content .eras{
+    margin: 15px;
+}
+.timeline .content .eras .head{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 30px;
+    font-family: 'cinzel',sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    position: relative;
+}
+.timeline .content .eras .head::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #ffac2e;
+    position: absolute;
+    left: 0%;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.timeline .content .eras .head:hover:before{
+    width: 100%;
+}
+.timeline .content .eras .mosques{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px 0px;
+}
+.timeline .content .eras .mosques .card{
+    margin: 25px 5px;
+    position: relative;
+    box-shadow: 5px 5px 15px 2px #222222;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 35vh;
+    width: 20%;
+}
+.timeline .content .eras .mosques .card a img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.timeline .content .eras .mosques .card .name{
+    position: absolute;
+    bottom: 0;
+    background-color: #0e4471;
+    opacity: .7;
+    width: 100%;
+    height: 7vh;
+    animation: name 0.5s;
+    display: none;
+    transition: all 0.2s;
+}
+.timeline .content .eras .mosques .card a .name p{
+    font-size: 1.4vw;
+    color: #f8ce91;
+    
+}
+.timeline .content .eras .mosques .card:hover{
+    box-shadow: 2px 5px 20px 3px #000
+}
+.timeline .content .eras .mosques .card:hover a img{
+    /* box-shadow: 0px 2px 12px #1e1e1e; */
+    transform: scale(1.15);
+}
+.timeline .content .eras .mosques .card:hover a .name{
+    display: block;
+}
+/*************************ANIMATIONS*******************************/
+@keyframes name {
+    from{
+        bottom: -45px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+/*************************MEDIA QUERY*******************************/
+@media screen and (max-width: 870px){
+    .sign h3,.timeline h3{
+        font-size: 28px;
+    }
+    .sign h3::before,.timeline h3::before{
+        left: 29%;
+    }
+    .sign h3::after,.timeline h3::after{
+        left: 29%;
+    }
+    .sign p{
+        font-size: 18px;
+    }
+    .timeline .content .eras .mosques .card{
+        width: 40%
+    }
+}
+@media screen and (max-width: 620px){
+    .title a{
+        padding: 7px 35px;
+    }
+    .sign h3,.timeline h3{
+        font-size: 24px;
+    }
+    .sign h3::before,.timeline h3::before{
+        left: 25%;
+    }
+    .sign h3::after,.timeline h3::after{
+        left: 25%;
+    }
+    .sign p{
+        font-size: 14px;
+    }
+    .timeline .content .eras .mosques .card{
+        width: 50%
+    }
+    .timeline .content .eras .head{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 455px){
+    .sign h3,.timeline h3{
+        font-size: 18px;
+    }
+    .sign h3::before,.timeline h3::before{
+        left: 12%;
+    }
+    .sign h3::after,.timeline h3::after{
+        left: 12%;
+    }
+    .sign p{
+        font-size: 13px;
+    }
+    .timeline .content .eras .head{
+        font-size: 12px;
+    }
+}

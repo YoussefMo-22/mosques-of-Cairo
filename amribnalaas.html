@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/navstyle.css">
+    <link rel="stylesheet" href="assests/css/pagestyle.css">
+    <link rel="shortcut icon" href="/assests/img/icon/icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mosque Of Amr Ibn Al-Aas</title>
+    <style>
+      .body{
+      background-image: url(./assests/img/amr/amr\ ibn\ al\ as\ court.jpg );
+      height:89vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: relative;
+  }
+    </style>
+  </head>
+  <body>
+    <!-------------------NAVIGATION BAR------------------------>
+    <header>
+      <nav>
+        <div class="navlist" id="myTopnav">
+          <a href="index.html" class="logo">
+            <img src="assests/img/icon/logo.png" alt="logo" width="165px" height="50px " />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Contant Us</a>
+          <a href="visit.html">Visit</a>
+           <a href="Home-Gallery.html">Gallery</a>
+          <div class="dropdown">
+            <button class="dropbtn">Eras <i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontent">
+              <a href="deputies.html">Governors Era</a>
+              <a href="Fatimid&Mamlukera.html">Fatimid to Mamluk Era</a>
+              <a href="Ottoman&ContemperaryEra.html">Ottoman to Contemporary Era</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Mosques <i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontent">
+              <a href="amribnalaas.html">Amr Ibn El-Aas Mosque</a>
+              <a href="Toulon.html">Ahmed Ibn Tulun Mosque</a>
+              <a href="alazharmosque.html">Al-Azhar Mosque</a>
+              <a href="EL-Hakim.html">Al-Hakim Mosque</a>
+              <a href="hasan.html">Al-Sultan Hassan Mosque</a>
+              <a href="mohamedalimosque.html">Muhammed Ali Moaque</a>
+              <a href="refai.html">Al-Refai Mosque</a>
+          
+            </div>
+          </div>
+       <div class="divsearch">
+            <button id="sBtn" class="searchBtn" onclick="seacrchBar()"><i class="fa fa-search"></i></button>
+            <div id="scont" class="search-container">
+              <form action="#">
+                <input list="mosques" name="mosque" id="mosque" placeholder="Search...">
+                <datalist id="mosques">
+                  <option value="Governors Era">
+                  <option value="Fatimid to Mamluk Era">
+                  <option value="Ottoman to Contemporary Era">
+                  <option value="Amr Ibn El-Aas Mosque">
+                  <option value="Ahmed Ibn Tulun Mosque">
+                  <option value="Al-Azhar Mosque">
+                  <option value="Al-Hakim Mosque">
+                  <option value="Al-Sultan Hassan Mosque">
+                  <option value="Muhammed Ali Moaque">
+                  <option value="Al-Refai Mosque">
+                </datalist>
+                <button class="sBtn2" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="toggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+     <div class="body">
+        <h1 id="head1"> Amr Ibn Al-Aas Mosque</h1>
+      </div>
+      <div class="content">
+        <h2 class="h">History</h2>
+        <div class="back1">
+          <div class="bo1">
+        <p class="p2">
+          The mosque of Amr ibn al-As is the oldest surviving mosque in Egypt and
+          Africa. <br />
+          General Amr ibn al-As was one of the first companions of the Prophet
+          Muhammad. After conquering Egypt he founded its first Islamic capital,
+          Fustat, which falls within the modern city of Cairo. <br />
+          A year later, by order of the Caliph Umar ibn al-Khattab he also founded
+          the eponymous mosque of Amr ibn al-As, which thus became the new
+          capitals very first building. <br />
+          During the early years following the conquest, the mosque served as a
+          place of gathering for Muslim community and Amr's troops. <br />
+          Several of the Prophet's companions assisted in the building's
+          construction, including al-Zubayr ibn al-Awam and Ubada ibn al-Samit.
+        </p>
+      </div>
+      </div>
+      <h2 class="h">Architecture</h2>
+        <div class="back1">
+        <div class="bo1">
+        <p class="p2">
+          The structure underwent many architectural changes throughout its
+          lifetime, such that very little of the original survives today. <br />
+          What currently stands in Old Cairo is the mosque's twentieth century
+          reconstruction. <br />
+          However, it remains true to the modesty of Islamic architecture in its
+          earliest form, evolving from a shed with palm-tree columns to the
+          elegant arcade halls that still house prayers to this day.
+        </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="h">Location</h2>
+        <div class="back1">
+        <i class="material-icons icon">pin_drop</i> Al-Fustat Cairo
+        <div class="map">
+          <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.736578269989!2d31.2331319!3d30.0100473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458477bf9a89023%3A0x8ef380c41130056b!2sAmr%20ibn%20Al-A&#39;as%20Mosque!5e0!3m2!1sen!2seg!4v1681520599099!5m2!1sen!2seg"
+        width="1200"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+        </div>
+        </div>
+      </div>
+      <div>
+          <h2 class="h">Gallery</h2>
+          <div class="back1"></div>
+          <div class="g1">
+          <div class="photo">
+              <a href="AmrIbnAl-AasGallery.html">
+                <img src="assests/img/amr/amr ibn al as entrance.jpg" >
+                <div class="name">
+                 <p>The Entrance Facade Of The Mosque</p> 
+                </div>
+              </a>
+      </div>
+      <div class="video">
+        <iframe width="500" height="230" src="https://www.youtube.com/embed/plaxqrzafoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+        </div>
+      <!-------------------------FOOTER------------------------->
+      <footer id="contact">
+        <div class="divcr">
+           <div class="social">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+            <p class="cr">Copy Right	&copy; 2023 Mosques of Cairo. All rights reserved.
+              Published by            
+             <span class="mail"> <a href="mailto:youssefji3mohamed33.com">YMAM</a></span>
+            </p>
+          </div>
+    </footer>
+      <button onclick="topbtn()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <script src="assests/js/navjs.js"></script>
+    </body>
+  </html>

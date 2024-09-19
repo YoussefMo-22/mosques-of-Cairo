@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assests/css/navstyle.css" />
+    <link rel="stylesheet" href="assests/css/book.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assests/img/icon/icon2.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Page about Mosques</title>
+  </head>
+  <body>
+    <!-------------------NAVIGATION BAR------------------------>
+    <header>
+      <nav>
+        <div class="navlist" id="myTopnav">
+          <a href="index.html" class="logo">
+            <img
+              src="assests/img/icon/logo.png"
+              alt="logo"
+              width="175px"
+              height="50px "
+            />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Contant Us</a>
+          <a href="visit.html">Visit</a>
+          <a href="Home-Gallery.html">Gallery</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Eras <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdowncontent">
+              <a href="deputies.html">Governors Era</a>
+              <a href="Fatimid&Mamlukera.html">Fatimid to Mamluk Era</a>
+              <a href="Ottoman&ContemperaryEra.html"
+                >Ottoman to Contemporary Era</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Mosques <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdowncontent">
+              <a href="amribnalaas.html">Amr Ibn El-Aas Mosque</a>
+              <a href="Toulon.html">Ahmed Ibn Tulun Mosque</a>
+              <a href="alazharmosque.html">El-Azhar Mosque</a>
+              <a href="EL-Hakim.html">El-Hakim Mosque</a>
+              <a href="hasan.html">El-Sultan Hassan Mosque</a>
+              <a href="mohamedalimosque.html">Muhammed Ali Moaque</a>
+              <a href="refai.html">El-Refai Mosque</a>
+            </div>
+          </div>
+          <div class="divsearch">
+            <button id="sBtn" class="searchBtn" onclick="seacrchBar()">
+              <i class="fa fa-search"></i>
+            </button>
+            <div id="scont" class="search-container">
+              <form action="#">
+                <input
+                  list="mosques"
+                  name="mosque"
+                  id="mosque"
+                  placeholder="Search..."
+                />
+                <datalist id="mosques">
+                  <option value="Governors Era"></option>
+                  <option value="Fatimid to Mamluk Era"></option>
+                  <option value="Ottoman to Contemporary Era"></option>
+                  <option value="Amr Ibn El-Aas Mosque"></option>
+                  <option value="Ahmed Ibn Tulun Mosque"></option>
+                  <option value="Al-Azhar Mosque"></option>
+                  <option value="Al-Hakim Mosque"></option>
+                  <option value="Al-Sultan Hassan Mosque"></option>
+                  <option value="Muhammed Ali Moaque"></option>
+                  <option value="Al-Refai Mosque"></option>
+                </datalist>
+
+                <button class="sBtn2" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="toggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------FORM--------------------->
+    <main>
+      <div class="wrapper">
+        <form action="visit.html" method="post">
+          <h1>Welcome to our Book about Mosques</h1>
+          <p>Please fill out the form below to book a ticket.</p>
+          <div class="content">
+            <div class="input">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Write Your Name"
+              /><br />
+            </div>
+            <div class="input">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Write Your Email"
+              /><br />
+            </div>
+            <div class="input">
+              <label for="">National ID:</label>
+              <input
+                type="text"
+                maxlength="11"
+                placeholder="Write Your National ID"
+              /><br />
+            </div>
+            <div class="input">
+              <label for="">Date:</label>
+              <input type="date" /><br />
+            </div>
+            <div class="input">
+              <label for="">Select the Visit:</label>
+              <select name="" id="">
+                <option value=""></option>
+                <option value="ahmed ibn tulun">Ahmed Ibn Tulun Mosque</option>
+                <option value="salah el-din square">Sultan Hasan Mosque</option>
+                <option value="salah el-din citadel">
+                  Salah El-Din Citadel
+                </option></select
+              ><br />
+            </div>
+            <div class="input">
+              <div class="radiolist">
+                <label for="">Ticket Type:</label><br /><br />
+                <input
+                  type="radio"
+                  name="type"
+                  id="Egadult"
+                  class="checked"
+                /><label for="Egadult"> Egyptian(Arab)/Adult</label> <br />
+                <input
+                  type="radio"
+                  name="type"
+                  id="Egstudent"
+                  class="checked"
+                />
+                <label for="Egstudent"> Egyptian(Arab)/Student </label><br />
+                <input type="radio" name="type" id="foradult" class="checked" />
+                <label for="foradult">Foreign/Adult </label><br />
+                <input
+                  type="radio"
+                  name="type"
+                  id="forstudent"
+                  class="checked"
+                />
+                <label for="forstudent">Foreign/Student</label> <br />
+              </div>
+            </div>
+            <input class="button" type="submit" value="Book" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-------------------------FOOTER------------------------->
+    <footer id="contact">
+      <div class="divcr">
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="cr">
+          Copy Right &copy; 2023 Mosques of Cairo. All rights reserved.
+          Published by
+          <span class="mail">
+            <a href="mailto:youssefji3mohamed33.com">YMAM</a></span
+          >
+        </p>
+      </div>
+    </footer>
+    <button onclick="topbtn()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <script src="assests/js/navjs.js"></script>
+  </body>
+</html>
