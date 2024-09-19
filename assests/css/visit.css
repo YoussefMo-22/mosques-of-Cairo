@@ -1,0 +1,98 @@
+::selection {
+  background-color: #0e4471;
+  color: #ffac2e;
+}
+body {
+  background-image: url(../img/gallery/6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.mainvisit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.main2 {
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000000;
+  flex-direction: column;
+  align-items: center;
+  width: 55vw;
+  height: auto;
+  padding: 20px;
+  background-color: #f4bf6e94;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+.head {
+  width: 40vw;
+}
+h1,
+h2,
+h3 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #0e4471;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 40px;
+  font-family: "cinzel", sans-serif;
+}
+h2 {
+  font-size: 2.7vw;
+  font-family: "cinzel", sans-serif;
+}
+h4 {
+  color: #0e4471;
+  font-size: 2vw;
+  font-family: "cinzel", sans-serif;
+}
+.para {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.7vw;
+  margin-bottom: 10px;
+  flex: 40%;
+  color: rgb(0, 0, 0);
+  font-family: "cairo", serif;
+}
+p span {
+  font-weight: bold;
+}
+.bookpg {
+  font-size: 2vw;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0e4471;
+  background-color: #f4bf6e;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-family: "cinzel", sans-serif;
+}
+.bookpg:hover {
+  color: #0e4471;
+  text-decoration: underline;
+  background-color: #f7dbb6;
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 620px) {
+}
+@media screen and (max-width: 455px) {
+}

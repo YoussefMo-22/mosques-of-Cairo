@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/navstyle.css" />
+    <link rel="stylesheet" href="assests/css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assests/img/icon/icon2.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regesiter</title>
+    <!-- <style>
+      @media screen and (max-width: 1024px) {
+        form {
+          width: 35vw;
+          height: 80vh;
+        }
+        .div input {
+          width: 20vw;
+        }
+        .div ion-icon {
+          right: 130px;
+        }
+        button {
+          width: 25vw;
+        }
+      }
+      @media screen and (max-width: 540px) {
+        form {
+          width: 60vw;
+          height: 80vh;
+        }
+        .div input {
+          width: 40vw;
+        }
+        .div ion-icon {
+          right: 90px;
+        }
+        button {
+          width: 40vw;
+        }
+      }
+      @media screen and (max-width: 415px) {
+        form {
+          width: 90vw;
+          height: 80vh;
+        }
+        .div input {
+          width: 70vw;
+        }
+        .div ion-icon {
+          right: 40px;
+        }
+        button {
+          width: 40vw;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-------------------NAVIGATION BAR------------------------>
+    <header>
+      <nav>
+        <div class="navlist" id="myTopnav">
+          <a href="index.html" class="logo">
+            <img
+              src="assests/img/icon/logo.png"
+              alt="logo"
+              width="175px"
+              height="50px "
+            />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Contant Us</a>
+          <a href="visit.html">Visit</a>
+          <a href="Home-Gallery.html">Gallery</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Eras <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdowncontent">
+              <a href="deputies.html">Governors Era</a>
+              <a href="Fatimid&Mamlukera.html">Fatimid to Mamluk Era</a>
+              <a href="Ottoman&ContemperaryEra.html"
+                >Ottoman to Contemporary Era</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Mosques <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdowncontent">
+              <a href="amribnalaas.html">Amr Ibn El-Aas Mosque</a>
+              <a href="Toulon.html">Ahmed Ibn Tulun Mosque</a>
+              <a href="alazharmosque.html">El-Azhar Mosque</a>
+              <a href="EL-Hakim.html">El-Hakim Mosque</a>
+              <a href="hasan.html">El-Sultan Hassan Mosque</a>
+              <a href="mohamedalimosque.html">Muhammed Ali Moaque</a>
+              <a href="refai.html">El-Refai Mosque</a>
+            </div>
+          </div>
+          <div class="divsearch">
+            <button id="sBtn" class="searchBtn" onclick="seacrchBar()">
+              <i class="fa fa-search"></i>
+            </button>
+            <div id="scont" class="search-container">
+              <form action="#">
+                <input
+                  list="mosques"
+                  name="mosque"
+                  id="mosque"
+                  placeholder="Search..."
+                />
+                <datalist id="mosques">
+                  <option value="Governors Era"></option>
+                  <option value="Fatimid to Mamluk Era"></option>
+                  <option value="Ottoman to Contemporary Era"></option>
+                  <option value="Amr Ibn El-Aas Mosque"></option>
+                  <option value="Ahmed Ibn Tulun Mosque"></option>
+                  <option value="Al-Azhar Mosque"></option>
+                  <option value="Al-Hakim Mosque"></option>
+                  <option value="Al-Sultan Hassan Mosque"></option>
+                  <option value="Muhammed Ali Moaque"></option>
+                  <option value="Al-Refai Mosque"></option>
+                </datalist>
+
+                <button class="sBtn2" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="toggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------Registertion form------------------------>
+
+    <div class="register">
+      <form action="" method="post">
+        <div>
+          <h1>Register</h1>
+          <div class="div">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" title="Write Your Name" required />
+            <label for=""> UserName</label>
+          </div>
+          <div class="div">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" title="Write Your Email" required />
+            <label for=""> Email</label>
+          </div>
+          <div class="div">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" title="Write Your Password" required /><br />
+            <label for=""> Password</label>
+          </div>
+          <div class="remForget">
+            <input
+              class="remember"
+              id="registerRemember"
+              name="remember"
+              type="checkbox"
+            />
+            <label for="registerRemember" class="rem">Remember</label>
+            <a class="forget" href="getbackpassword.html">Forget Password</a>
+          </div>
+          <div class="button">
+            <button type="button">Regesiter</button><br />
+          </div>
+          <div class="regaccount">
+            <p>Already have an account?</p>
+            <a class="log" href="login.html">Login</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-------------------------FOOTER------------------------->
+    <footer id="contact">
+      <div class="divcr">
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="cr">
+          Copy Right &copy; 2023 Mosques of Cairo. All rights reserved.
+          Published by
+          <span class="mail">
+            <a href="mailto:youssefji3mohamed33.com">YMAM</a></span
+          >
+        </p>
+      </div>
+    </footer>
+    <button onclick="topbtn()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assests/js/navjs.js"></script>
+  </body>
+</html>

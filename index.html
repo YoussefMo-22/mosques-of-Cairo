@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/navstyle.css">
+    <link rel="stylesheet" href="assests/css/homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/assests/img/icon/icon2.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosques of Cairo</title>
+  </head>
+  <body>
+    <!-------------------NAVIGATION BAR------------------------>
+    <header>
+      <nav>
+        <div class="navlist" id="myTopnav">
+          <a href="index.html" class="logo">
+            <img src="assests/img/icon/logo.png" alt="logo" width="165px" height="50px " />
+          </a>
+          <a href="about.html">About us </a>
+          <a href="#contact">Contant Us</a>
+          <a href="login.html">Login</a>
+          <a href="Home-Gallery.html">Gallery</a>          
+          <div class="dropdown">
+            <button class="dropbtn">Eras <i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontent">
+              <a href="deputies.html">Governors Era</a>
+              <a href="Fatimid&Mamlukera.html">Fatimid to Mamluk Era</a>
+              <a href="Ottoman&ContemperaryEra.html">Ottoman to Contemporary Era</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Mosques <i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontent">
+              <a href="amribnalaas.html">Amr Ibn El-Aas Mosque</a>
+              <a href="Toulon.html">Ahmed Ibn Tulun Mosque</a>
+              <a href="alazharmosque.html">Al-Azhar Mosque</a>
+              <a href="EL-Hakim.html">Al-Hakim Mosque</a>
+              <a href="hasan.html">Al-Sultan Hassan Mosque</a>
+              <a href="mohamedalimosque.html">Muhammed Ali Moaque</a>
+              <a href="refai.html">Al-Refai Mosque</a>            
+            </div>
+          </div>
+          <div class="divsearch">
+            <button id="sBtn" class="searchBtn" onclick="seacrchBar()"><i class="fa fa-search"></i></button>
+            <div id="scont" class="search-container">
+              <form action="#">
+                <input list="mosques" name="mosque" id="mosque" placeholder="Search...">
+                <datalist id="mosques">
+                  <option value="Governors Era">
+                  <option value="Fatimid to Mamluk Era">
+                  <option value="Ottoman to Contemporary Era">
+                  <option value="Amr Ibn El-Aas Mosque">
+                  <option value="Ahmed Ibn Tulun Mosque">
+                  <option value="Al-Azhar Mosque">
+                  <option value="Al-Hakim Mosque">
+                  <option value="Al-Sultan Hassan Mosque">
+                  <option value="Muhammed Ali Moaque">
+                  <option value="Al-Refai Mosque">
+                </datalist>
+                <button class="sBtn2" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="toggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-----------------------TITLE--------------------------->
+    <section>
+      <div class="title">
+        <h1>Mosques of Cairo</h1>
+        <h3>Discover Cairo's Mosques</h3>
+        <a href="visit.html">Visit</a>
+      </div>
+      <!--------------SIGNIFICANCE----------------->
+      <div class="sign">
+        <h3>Significance of The Mosques</h3>
+        <p>
+          Most religions have a place of worship. For Islam, It is the mosque. A
+          Mosque is the house of Allah s.w.t. where only he is worshipped and
+          glorified through the five daily prayers, supplementary (Sunnah),
+          prayers, reciting the Qur'an, zikr (remembrance of Allah s.w.t.), and
+          many other good deeds. Mosque is the center of a
+          community, and many wonderful pieces of Islamic art have been created.
+          Mosque is the place for social welfare, religious festivals,
+          celebrations such as Ramadan, and community work.
+        <br>
+        
+          Military and political importance: The first Mosque of the Prophet
+          Mohamed had a political office for serving a combined function as a
+          socio-religious and socio-political, he sent the army for Jihad from
+          the mosque in Al-Madinah. Al-Azhar had a major role in the 1919 revolt
+          against the British.
+        </p>
+      </div>
+      <!---------------------TIMELINE---------------------->
+      <div class="timeline">
+        <h3>Time Line of Eras and Mosques</h3>
+        <div class="content">
+          <div class="eras">
+            <a href="deputies.html" class="head">Governors Eras <i class="fa fa-arrow-right"></i></a>
+            <div class="mosques">
+              <div class="card">
+                <a href="amribnalaas.html">
+                  <img src="assests/img/amr/amr ibn al aas mosque.jpg" alt="Amr Ibn Al-Aas Mosque">
+                  <div class="name">
+                    <p>Amr Ibn Al-Aas Mosque</p>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="card">
+                <a href="Toulon.html">
+                  <img src="assests/img/tulun/ibn tulun.jpg" alt="Ahmed Ibn Tulun Mosque">
+                  <div class="name">
+                    <p>Ahmed Ibn Tulun Mosque</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="eras">
+            <a href="Fatimid&Mamlukera.html" class="head">Fatimid Era to Mamluk Era <i class="fa fa-arrow-right"></i></a>
+            <div class="mosques">
+              <div class="card">
+                <a href="alazharmosque.html">
+                  <img src="assests/img//azhar/Al-Azhar_Mosque-Outside.jpg" alt="El-Azhar Mosque">
+                  <div class="name">
+                    <p>El-Azhar Mosque</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="EL-Hakim.html">
+                  <img src="assests/img/hakim/main.jpg" alt="El-Hakim Mosque">
+                  <div class="name">
+                    <p>El-Hakim Mosque</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="hasan.html">
+                  <img src="assests/img/hasan/general view.jpg" alt="El-Sultan Hasan Mosque">
+                  <div class="name">
+                    <p>El-Sultan Hasan Mosque</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="eras">
+            <a href="Ottoman&ContemperaryEra.html" class="head">Ottoman Era to Contemporary Era <i class="fa fa-arrow-right"></i></a>
+            <div class="mosques">
+              <div class="card">
+                <a href="mohamedalimosque.html">
+                  <img src="assests/img/mohamedali/View.jpg" alt="Muhammed Ali Mosque">
+                  <div class="name">
+                    <p>Muhammed Ali Mosque</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="refai.html">
+                  <img src="assests/img/refai/r14.jpg" alt="El-Refai Mosque">
+                  <div class="name">
+                    <p>El-Refai Mosque</p>
+                  </div>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+    </section>
+    <!-------------------------FOOTER------------------------->
+    <footer id="contact">
+        <div class="divcr">
+          <div class="social">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+            <p class="cr">Copy Right	&copy; 2023 Mosques of Cairo. All rights reserved.
+              Published by            
+             <span class="mail"> <a href="mailto:youssefji3mohamed33.com">YMAM</a></span>
+            </p>
+          </div>
+    </footer>
+      <button onclick="topbtn()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <script src="assests/js/navjs.js"></script>
+  </body>
+</html>

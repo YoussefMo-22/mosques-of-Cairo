@@ -1,0 +1,298 @@
+/*----------------font--------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Cinzel&family=Kdam+Thmor+Pro&family=Poppins&display=swap");
+/*-------------------- Back To Era------------------ */
+
+/*---------------- Body Of  All Content--------------- */
+.content {
+  background-color: #f7dbb6;
+}
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+/*---------------- Paragraph Of Heads--------------- */
+::selection {
+  background-color: #0e4471;
+  color: #ffac2e;
+}
+#head1 + p {
+  filter: drop-shadow(0px 10px 5px #1e1e1e);
+  text-align: center;
+  width: 60%;
+  font-weight: bold;
+  font-size: 50px;
+  color: #a4522d;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+}
+/*---------------- Heads Of Titles--------------- */
+.h {
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+  width: 20vw;
+  height: 10vh;
+  background-color: #0e4471;
+  color: #ffac2e;
+  box-sizing: border-box;
+  margin: 30px 0 26px 10px;
+  position: relative;
+  margin: 50px;
+}
+body {
+  background-color: #f7dbb6;
+}
+.content .h {
+  margin-top: 40px;
+}
+/*---------------- All Paragraphs--------------- */
+p {
+  color: #a4522d;
+  text-align: justify;
+  font-size: large;
+}
+/*----------------Paragrapg Inside The Boxing--------------- */
+.p2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 30px;
+  line-height: 30px;
+  text-indent: 15px;
+  background-color: #f1f1f1;
+  color: #363639;
+  text-align: justify;
+  font-size: large;
+  position: relative;
+}
+/*----------------Div For History and Architture--------------- */
+
+.p2 {
+  color: #0e4471;
+  text-align: left;
+  line-height: 1.7;
+  text-transform: capitalize;
+  word-spacing: 5px;
+  direction: ltr;
+  background-color: #f4bf6e94;
+  width: auto;
+  margin-left: auto;
+  height: auto;
+  margin-left: 25px;
+  list-style-position: inside;
+  list-style-type: circle;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  font-size: 20px;
+}
+/*----------------Right Line--------------- */
+.p2::before {
+  content: "";
+  width: 0vw;
+  height: 0vw;
+  position: absolute;
+  left: -0.8vw;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #0e4471;
+}
+/*----------------Left Line--------------- */
+
+/*----------------Titles Inside The Boxing--------------- */
+.p2 h3 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  line-height: 60px;
+  text-indent: 10px;
+  color: blue;
+  text-align: left;
+  font-size: large;
+  font-size: 28px;
+}
+/*---------------- The Titles Of Pages--------------- */
+#head1 {
+  filter: drop-shadow(0px 10px 5px #1e1e1e);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 50px;
+  color: #f7dbb6;
+  font-family: "cinzel", sans-serif;
+  font-size: 5vw;
+  padding-top: 250px;
+}
+/*---------------- Div For Photoes--------------- */
+.g1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 4em;
+  margin-bottom: 30px;
+}
+
+.f1 {
+  padding-right: 500px;
+}
+
+#ma1 {
+  float: right;
+  width: 200vw;
+  height: 140vh;
+  clear: both;
+}
+b {
+  color: black;
+}
+.smallimg {
+  width: 200vw;
+  height: 150vh;
+  flex: 20%;
+}
+.bigimg {
+  width: 200vw;
+  height: 150vh;
+  flex: 80%;
+}
+/*----------------Location Map--------------- */
+.map iframe {
+  width: 80vw;
+  height: 70vh;
+  margin: 20px 0px 20px 30px;
+}
+/*----------------the Galary--------------- */
+.photo {
+  margin: 10px 50px;
+  position: relative;
+  box-shadow: 5px 5px 15px 2px #222222;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 30vh;
+  width: 30vw;
+}
+
+/*----------------The Photoes inside Galary--------------- */
+.photo a img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/*----------------Div for Paragraph--------------- */
+.photo .name {
+  position: absolute;
+  bottom: 0;
+  background-color: #1e1e1eda;
+  width: 100%;
+  height: 7vh;
+  animation: name 0.5s;
+  display: none;
+  transition: all 0.2s;
+}
+/*---------------- The Paragraph inside the photoes--------------- */
+.photo a .name p {
+  font-size: 1.2vw;
+  color: #fffff0;
+  word-spacing: normal;
+}
+/*----------------Photoes Hovers (Box Shadow)--------------- */
+.photo:hover {
+  box-shadow: 2px 5px 20px 3px #000;
+}
+/*----------------Photoes Hovers--------------- */
+.photo:hover a img {
+  box-shadow: 0px 2px 12px #1e1e1e;
+  transform: scale(1.1);
+}
+/*----------------Display Of Paragraph --------------- */
+.photo:hover a .name {
+  display: block;
+}
+.video {
+  position: relative;
+  left: 150px;
+}
+/*----------------Media Quary For Labtop--------------- */
+@media screen and (max-width: 1440px) {
+  .p2 {
+    font-size: 1.2vw;
+  }
+  .back1 {
+    height: auto;
+    margin-top: -2vh;
+  }
+  .photo {
+    width: 14vw;
+  }
+  .h {
+    font-size: 1.8vw;
+    height: 8.9vh;
+  }
+  .bo1::before {
+    left: -1.4vw;
+    top: 50%;
+  }
+  .body {
+    background-position: center;
+  }
+}
+/*----------------Media Quary For Tablet-------------- */
+@media screen and (max-width: 786px) {
+  .photo {
+    width: 19vw;
+  }
+  .photo a .name p {
+    font-size: 1.9vw;
+  }
+  .photo a .name {
+    height: 5vh;
+  }
+  .h {
+    font-size: 4vw;
+    width: 45vw;
+  }
+  .p2 {
+    font-size: 2.3vw;
+  }
+  .back1 {
+    height: auto;
+  }
+  .body {
+    height: 80vh;
+    width: auto;
+    background-position: center;
+  }
+}
+/*----------------Media Quary For Phones--------------- */
+@media screen and (max-width: 320px) {
+  .photo {
+    width: 36vw;
+  }
+  .photo a .name p {
+    font-size: 3.8vw;
+  }
+  .h {
+    width: 50vw;
+    height: 7vh;
+    font-size: 6.5vw;
+  }
+  .p2 {
+    font-size: 5vw;
+  }
+  .back1 {
+    width: auto;
+    margin: 1px;
+    height: auto;
+  }
+  #head1 {
+    font-size: 30px;
+  }
+  .body {
+    background-position: center;
+  }
+}
+:root {
+  border-color: #f4bf6e;
+}

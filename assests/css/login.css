@@ -1,0 +1,233 @@
+::selection {
+  background-color: #0e4471;
+  color: #ffac2e;
+}
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.login,
+.register {
+  background-image: url(../img/Login/Backgroundlogin4.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+form {
+  border: 2px solid #0e4471;
+  border-radius: 20px;
+  margin-top: 10vh;
+  width: 25vw;
+  height: 65vh;
+  box-shadow: 0 0 10px #0e4471;
+  backdrop-filter: blur(20px);
+}
+form h1 {
+  text-align: center;
+  color: #0e4471;
+  margin: 20px 20px 0 20px;
+  font-weight: bold;
+  font-size: 60px;
+}
+.div {
+  position: relative;
+}
+.div label {
+  position: absolute;
+  top: 30%;
+  left: 25px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.5s;
+  color: #0e4471;
+}
+.div input {
+  background-color: transparent;
+  width: 18vw;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0e4471;
+  margin: 15px 25px;
+  transition: all 0.3s ease;
+  font-weight: 900;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -2px;
+}
+.div ion-icon {
+  position: absolute;
+  right: 80px;
+  color: #0e4471;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.remember {
+  margin: 0 0 15px 40px;
+}
+.rem {
+  margin: 5px;
+}
+.forget {
+  margin-left: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.regaccont {
+  position: relative;
+}
+.reg,
+.log {
+  text-decoration: none;
+  position: absolute;
+}
+.button {
+  display: grid;
+  place-items: center;
+}
+button {
+  width: 15vw;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 35x;
+}
+button:hover {
+  background-color: #0e4471;
+  color: #ffac2e;
+}
+p {
+  display: inline-block;
+  margin: 0px 0px 0 40px;
+  font-size: 17px;
+  position: relative;
+}
+
+.reg,
+p,
+.forget,
+.rem,
+button,
+.log {
+  color: #0e4471;
+  font-size: 18px;
+}
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/*************************MEDIA QUERY*******************************/
+@media screen and (max-width: 1235px) {
+  form {
+    width: 35vw;
+  }
+  .div input {
+    width: 20vw;
+  }
+  .div ion-icon {
+    right: 130px;
+  }
+  button {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  form {
+    height: 60vh;
+    width: 35vw;
+  }
+  .div input {
+    width: 25vw;
+  }
+  button {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  form {
+    width: 45vw;
+  }
+  .div input {
+    width: 25vw;
+  }
+  .div ion-icon {
+    right: 140px;
+  }
+  button {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  form {
+    width: 60vw;
+    height: 65vh;
+  }
+  .div input {
+    width: 42vw;
+  }
+  button {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  form {
+    width: 80vw;
+  }
+  .div input {
+    width: 50vw;
+  }
+  .div ion-icon {
+    right: 120px;
+  }
+  button {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 380px) {
+  form {
+    width: 90vw;
+    height: 70vh;
+  }
+  button {
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 326px) {
+  form {
+    height: 70vh;
+  }
+  .forget {
+    display: block;
+  }
+  button {
+    width: 70vw;
+    font-size: 20px;
+  }
+  form h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .reg {
+    display: block;
+    position: relative;
+    left: 20px;
+  }
+  .div ion-icon {
+    right: 90px;
+  }
+  .forget {
+    margin-bottom: 10px;
+  }
+}
